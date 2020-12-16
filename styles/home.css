@@ -78,7 +78,7 @@ margin-left:20px ;
 }
 .navbar-item--has-dropdown::after{
     font-size: 10px;
-    content: '\f0d7';
+    content: 'ˇ';
    
 }
 
@@ -157,7 +157,7 @@ margin-left:20px ;
 .contact-form{
     background-color: #fd252599!important;
     margin: 0 auto;
-    width: 50%!important;
+    width: 30%!important;
     padding: 20px;
     position: relative;
     border-radius:8px;
@@ -176,4 +176,128 @@ width: 95%;
 .btn-contact{
     width: 150px;
     height: 50px;
+}
+
+/* sell; */
+
+.sell{
+    background-color: #1999ce;
+    padding: 60px 5rem;
+}
+
+/* question */
+
+.question-section{
+    background: url(https://gsoft.com.vn/wp-content/uploads/2020/10/daicute.jpg);
+    background-size: cover;
+    padding: 15px 20px;
+}
+
+.title-question{
+    padding: 22px 10px;
+    text-align: center;
+}
+
+.question{
+    margin-bottom: 15px;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    padding: 15px;
+    background: #fff;
+    position: relative;
+}
+.question>i{
+    position: absolute;
+    top:1rem;
+    right: 1rem;
+    width: 13px;
+    height: 12px;
+   opacity: 0.8;
+}
+.question__answer{
+    display: none;
+}
+
+.question__answer--show{
+    display: block;
+}
+
+.customer-section{
+    padding: 20px ;
+}
+
+.list-customer{
+    padding: 0px 130px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.customer{
+    margin: 1rem;
+    margin-bottom: 30px;
+}
+.customer img{
+    width: 100%;
+    max-width: 180px;
+}
+
+
+.contact-btn{
+    background: #ff242e!important;
+    border: 1px solid #ff242e!important;
+    text-align: center;
+    padding: 2px 20px 0px!important;
+    color: #fff!important;
+    height: 40px;
+    line-height: 35px!important;
+    text-decoration: none!important;
+    text-transform: uppercase!important;
+    border-radius: 13px;
+    font-weight: bold;
+}
+
+.contact-btn i{
+    font-weight: bold;
+}
+
+
+/* footer */
+.footer{
+    background: #272567;
+    color: white;
+    padding: 60px 0;
+}
+
+.footer a{
+    color: white;
+}
+
+.adrs{
+    list-style: none;
+}
+
+.adrs li{
+    margin-bottom: 1rem;
+}
+
+#map {
+    height: 400px;
+    /* The height is 400 pixels */
+    width: 100%;
+    /* The width is the width of the web page */
+  }
+@media only screen and (max-width: 990px){
+    
+.contact-form{
+    width: 50% !important;
+}
+.contact-body .row {
+    margin: 0 !important;
+}
+.contact-body .row input,textarea{
+    margin-bottom: 0.3rem;
+}
+.contact-body .row textarea{
+width: 95%;
+}
 }
