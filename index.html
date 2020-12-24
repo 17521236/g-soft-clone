@@ -5,21 +5,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Công ty TNHH Phần Mềm Toàn Cầu</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <link rel="stylesheet" href="./styles/home.css">
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
 </head>
 
 <body>
+    <!-- header -->
     <div class="header sticky-top bg-white" style="box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.2);">
         <nav>
-            <div class="logo"></div>
+
+            <a class="logo" href="./index.html"></a>
+
             <div class="navbar">
                 <ul class="navbar-items d-flex p-0">
                     <li class="navbar-item navbar-item--has-dropdown"><a href="#">Giới thiệu</a>
                         <ul class="submenu">
-                            <li class="submenu-item"><a href="#">Về GSOFT</a></li>
+                            <li class="submenu-item"><a href="./about.html">Về GSOFT</a></li>
                             <li class="submenu-item"><a href="#">Đối tác chiến lược</a></li>
                         </ul>
                     </li>
@@ -29,14 +31,74 @@
                     <li class="navbar-item"><a href="#">IT onsite </a></li>
                     <li class="navbar-item"><a href="#">blog</a></li>
                     <li class="navbar-item"><a href="#">Tuyển dụng</a></li>
-                    <li class="navbar-item"><a href="#">liên hệ</a></li>
-                    <li class="navbar-item item--register "><a href="#">Đăng ký <i
-                                class='bx bx-chevron-right i'></i></a></li>
+                    <li class="navbar-item"><a href="./contact.html">liên hệ</a></li>
+                    <li class="navbar-item item--register "><a href="#">Đăng ký <i class='bx bx-chevron-right i'></i></a></li>
                 </ul>
+            </div>
+            <div class="btn-menu-mobile" onclick="showNav()">
+                <button id="btn-show" class="btn"> <i class="bx bx-menu" style="font-size: 2rem;"></i></button>
+                <button id="btn-hide" class="btn btn-hide"><i class='bx bx-left-arrow-alt' style="font-size: 2rem;"></i></button>
+            </div>
+
+            <div id="navbar-mobile" class="navbar-mobile">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="nav-mobile-item">
+                                <a href="#">Trang chủ</a>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="nav-mobile-item">
+                                <a href="#">Giới thiệu</a>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="nav-mobile-item">
+                                <a href="#">Phần mềm</a>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="nav-mobile-item">
+                                <a href="#">Bảng giá</a>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="nav-mobile-item">
+                                <a href="#">Hướng dẫn</a>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="nav-mobile-item">
+                                <a href="#">IT onsite </a>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="nav-mobile-item">
+                                <a href="#">Blog </a>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="nav-mobile-item">
+                                <a href="#">Tuyển dụng </a>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="nav-mobile-item">
+                                <a href="#">Liên hệ </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </nav>
     </div>
+
+    <!-- end header -->
+
+    <!-- main -->
     <div class="body">
+        <!-- banner -->
         <div class="banner">
             <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
                 <ol class="carousel-indicators">
@@ -61,11 +123,14 @@
                 </a>
             </div>
         </div>
+
+        <!-- end banner -->
+
+        <!-- list -->
         <section class="app-list">
-            <h2 class="text-center m-3" style="font-family: Vollkorn;">HỆ THỐNG PHẦN MỀM QUẢN TRỊ ĐẦU TƯ MUA SẮM VÀ QUẢN
-                LÝ TÀI SẢN TẬP TRUNG gAMSPro
+            <h2 class="text-center m-3" style="font-family: Vollkorn;">HỆ THỐNG PHẦN MỀM QUẢN TRỊ ĐẦU TƯ MUA SẮM VÀ QUẢN LÝ TÀI SẢN TẬP TRUNG gAMSPro
             </h2>
-            <div class="container-fluid " style="padding: 0 7rem;">
+            <div class="container-fluid list">
                 <div class="row">
                     <div class="col-lg-6">
                         <div class="appplication">
@@ -73,10 +138,7 @@
                                 <img src="./images/app-1.png" alt="app1">
                             </div>
                             <h5 class="mt-3 text-center"> PHẦN MỀM QUẢN LÝ HÀNG HÓA</h5>
-                            <p class="mt-3 text-center">Quản lý hàng hóa để đảm bảo khi lập kế hoạch, thực hiện
-                                đầu tư mua sắm thì được
-                                mua sắm những hàng hóa chất lượng, uy tín đã được hội đồng mua sắm, kiểm duyệt đủ
-                                tiêu chuẩn sử dụng trong tổ chức, doanh nghiệp.</p>
+                            <p class="mt-3 text-center">Quản lý hàng hóa để đảm bảo khi lập kế hoạch, thực hiện đầu tư mua sắm thì được mua sắm những hàng hóa chất lượng, uy tín đã được hội đồng mua sắm, kiểm duyệt đủ tiêu chuẩn sử dụng trong tổ chức, doanh nghiệp.</p>
                             <div class="application__btn mt-3 text-center"><a href="#">Xem thêm</a></div>
                         </div>
                     </div>
@@ -86,10 +148,8 @@
                                 <img src="./images/app-2.png" alt="app1">
                             </div>
                             <h5 class="mt-3 text-center"> PHẦN MỀM QUẢN LÝ NHÀ CUNG CẤP</h5>
-                            <p class="mt-3 text-center">Chỉ những nhà cung cấp hàng hóa uy tín, có chất lượng
-                                được sự kiểm duyệt, mới được cung cấp hàng hóa cho tổ chức, doanh nghiệp. Hàng
-                                năm hệ thống hỗ trợ đánh giá nhà cung cấp dựa trên lịch sử làm việc với NCC và lịch sử,
-                                bảo trì, sửa chữa tài sản mà NNC đó đã cung cấp.</p>
+                            <p class="mt-3 text-center">Chỉ những nhà cung cấp hàng hóa uy tín, có chất lượng được sự kiểm duyệt, mới được cung cấp hàng hóa cho tổ chức, doanh nghiệp. Hàng năm hệ thống hỗ trợ đánh giá nhà cung cấp dựa trên lịch sử làm việc với NCC
+                                và lịch sử, bảo trì, sửa chữa tài sản mà NNC đó đã cung cấp.</p>
                             <div class="application__btn mt-3 text-center"><a href="#">Xem thêm</a></div>
                         </div>
                     </div>
@@ -101,9 +161,7 @@
                                 <img src="./images/app-4.png" alt="app1">
                             </div>
                             <h5 class="mt-3 text-center"> PHẦN MỀM QUẢN LÝ KẾ HOẠCH MUA SẮM</h5>
-                            <p class="mt-3 text-center">Cho phép tổ chức, doanh nghiệp xây dựng kế hoạch tổng thể đầu tư
-                                mua sắm trong cả năm và chi tiết đến từng tháng. Từ đó làm căn cứ cho cả quá trình thực
-                                hiện đầu tư mua sắm tiếp theo.</p>
+                            <p class="mt-3 text-center">Cho phép tổ chức, doanh nghiệp xây dựng kế hoạch tổng thể đầu tư mua sắm trong cả năm và chi tiết đến từng tháng. Từ đó làm căn cứ cho cả quá trình thực hiện đầu tư mua sắm tiếp theo.</p>
                             <div class="application__btn mt-3 text-center"><a href="#">Xem thêm</a></div>
                         </div>
                     </div>
@@ -113,8 +171,7 @@
                                 <img src="./images/app-5.png" alt="app1">
                             </div>
                             <h5 class="mt-3 text-center">PHẦN MỀM QUẢN LÝ TÀI SẢN CỐ ĐỊNH/ CÔNG CỤ LAO ĐỘNG</h5>
-                            <p class="mt-3 text-center">Quản lý tất cả vòng đời khai thác sử dụng tài sản từ nhập mới,
-                                cấp phát sử dụng, in nhãn, điều chuyển, thu hồi, sửa chữa, kiểm kê, khấu hao tài sản.
+                            <p class="mt-3 text-center">Quản lý tất cả vòng đời khai thác sử dụng tài sản từ nhập mới, cấp phát sử dụng, in nhãn, điều chuyển, thu hồi, sửa chữa, kiểm kê, khấu hao tài sản.
                             </p>
                             <div class="application__btn mt-3 text-center"><a href="#">Xem thêm</a></div>
                         </div>
@@ -127,9 +184,7 @@
                                 <img src="./images/app-6.png" alt="app1">
                             </div>
                             <h5 class="mt-3 text-center"> PHẦN MỀM QUẢN LÝ MUA SẮM</h5>
-                            <p class="mt-3 text-center">Quản lý quá trình mua sắm từ việc tờ trình chủ trương, phiếu yêu
-                                cầu mua sắm, tạo dự án, hồ sơ thầu, đấu thầu, ghi nhận thông tin trúng thầu và đi đến ký
-                                hợp đồng, gọi hàng (PO) và thực hiện thanh toán giao nhận hàng.</p>
+                            <p class="mt-3 text-center">Quản lý quá trình mua sắm từ việc tờ trình chủ trương, phiếu yêu cầu mua sắm, tạo dự án, hồ sơ thầu, đấu thầu, ghi nhận thông tin trúng thầu và đi đến ký hợp đồng, gọi hàng (PO) và thực hiện thanh toán giao nhận hàng.</p>
                             <div class="application__btn mt-3 text-center"><a href="#">Xem thêm</a></div>
                         </div>
                     </div>
@@ -139,8 +194,7 @@
                                 <img src="./images/app-7.png" alt="app1">
                             </div>
                             <h5 class="mt-3 text-center">PHẦN MỀM QUẢN LÝ THANH LÝ TÀI SẢN</h5>
-                            <p class="mt-3 text-center">Cho phép lập kế hoạch thanh lý để biết được số lượng tài sản cần
-                                mua thay thế và cho phép lập đề xuất thanh lý, cũng như thanh lý tài sản.</p>
+                            <p class="mt-3 text-center">Cho phép lập kế hoạch thanh lý để biết được số lượng tài sản cần mua thay thế và cho phép lập đề xuất thanh lý, cũng như thanh lý tài sản.</p>
                             <div class="application__btn mt-3 text-center"><a href="#">Xem thêm</a></div>
                         </div>
                     </div>
@@ -152,9 +206,7 @@
                                 <img src="./images/app-6.png" alt="app1">
                             </div>
                             <h5 class="mt-3 text-center"> PHẦN MỀM QUẢN LÝ MUA SẮM</h5>
-                            <p class="mt-3 text-center">Quản lý quá trình mua sắm từ việc tờ trình chủ trương, phiếu yêu
-                                cầu mua sắm, tạo dự án, hồ sơ thầu, đấu thầu, ghi nhận thông tin trúng thầu và đi đến ký
-                                hợp đồng, gọi hàng (PO) và thực hiện thanh toán giao nhận hàng.</p>
+                            <p class="mt-3 text-center">Quản lý quá trình mua sắm từ việc tờ trình chủ trương, phiếu yêu cầu mua sắm, tạo dự án, hồ sơ thầu, đấu thầu, ghi nhận thông tin trúng thầu và đi đến ký hợp đồng, gọi hàng (PO) và thực hiện thanh toán giao nhận hàng.</p>
                             <div class="application__btn mt-3 text-center"><a href="#">Xem thêm</a></div>
                         </div>
                     </div>
@@ -164,8 +216,7 @@
                                 <img src="./images/app-7.png" alt="app1">
                             </div>
                             <h5 class="mt-3 text-center">PHẦN MỀM QUẢN LÝ THANH LÝ TÀI SẢN</h5>
-                            <p class="mt-3 text-center">Cho phép lập kế hoạch thanh lý để biết được số lượng tài sản cần
-                                mua thay thế và cho phép lập đề xuất thanh lý, cũng như thanh lý tài sản.</p>
+                            <p class="mt-3 text-center">Cho phép lập kế hoạch thanh lý để biết được số lượng tài sản cần mua thay thế và cho phép lập đề xuất thanh lý, cũng như thanh lý tài sản.</p>
                             <div class="application__btn mt-3 text-center"><a href="#">Xem thêm</a></div>
                         </div>
                     </div>
@@ -177,8 +228,7 @@
                                 <img src="./images/app-8.png" alt="app1">
                             </div>
                             <h5 class="mt-3 text-center"> PHẦN MỀM QUẢN LÝ TÀI SẢN ĐẶC THÙ</h5>
-                            <p class="mt-3 text-center">Quản lý thông tin xe, vận hành, bảo trì, bảo dưỡng, đăng kiểm,
-                                sửa chữa theo đúng thời hạn sử dụng để tối ưu hóa hiệu năng.</p>
+                            <p class="mt-3 text-center">Quản lý thông tin xe, vận hành, bảo trì, bảo dưỡng, đăng kiểm, sửa chữa theo đúng thời hạn sử dụng để tối ưu hóa hiệu năng.</p>
                             <div class="application__btn mt-3 text-center"><a href="#">Xem thêm</a></div>
                         </div>
                     </div>
@@ -188,8 +238,7 @@
                                 <img src="./images/app-9.png" alt="app1">
                             </div>
                             <h5 class="mt-3 text-center">PHẦN MỀM QUẢN LÝ BẤT ĐỘNG SẢN</h5>
-                            <p class="mt-3 text-center">Cho phép quản lý các thông tin chi tiết, đặc thù của bất động
-                                sản cũng như hồ sơ bất động sản.</p>
+                            <p class="mt-3 text-center">Cho phép quản lý các thông tin chi tiết, đặc thù của bất động sản cũng như hồ sơ bất động sản.</p>
                             <div class="application__btn mt-3 text-center"><a href="#">Xem thêm</a></div>
                         </div>
                     </div>
@@ -201,10 +250,8 @@
                                 <img src="./images/app-10.png" alt="app1">
                             </div>
                             <h5 class="mt-3 text-center"> PHẦN MỀM QUẢN LÝ CÔNG TRÌNH XÂY DỰNG CƠ BẢN</h5>
-                            <p class="mt-3 text-center">Quản lý công trình, từng hạng mục công trình, quá trình thầu cho
-                                từng hạng mục, hợp đồng thầu, phụ lục hợp đồng và theo dõi ghi nhận quá trình thanh
-                                quyết toán để tổng hợp kinh phí đầu tư, định giá công trình khi hoàn công, nhập mới,
-                                khai thác tài sản.</p>
+                            <p class="mt-3 text-center">Quản lý công trình, từng hạng mục công trình, quá trình thầu cho từng hạng mục, hợp đồng thầu, phụ lục hợp đồng và theo dõi ghi nhận quá trình thanh quyết toán để tổng hợp kinh phí đầu tư, định giá công trình khi hoàn công,
+                                nhập mới, khai thác tài sản.</p>
                             <div class="application__btn mt-3 text-center"><a href="#">Xem thêm</a></div>
                         </div>
                     </div>
@@ -214,9 +261,7 @@
                                 <img src="./images/app-11.png" alt="app1">
                             </div>
                             <h5 class="mt-3 text-center">PHẦN MỀM QUẢN LÝ KHAI THÁC - CHO THUÊ TÒA NHÀ</h5>
-                            <p class="mt-3 text-center">Cho phép định nghĩa các tầng khu trong tòa nhà, khai báo diện
-                                tích sử dụng nội bộ và diện tích còn trống để cho thuê, quản lý khách thuê, hợp đồng
-                                thuê và thanh toán.</p>
+                            <p class="mt-3 text-center">Cho phép định nghĩa các tầng khu trong tòa nhà, khai báo diện tích sử dụng nội bộ và diện tích còn trống để cho thuê, quản lý khách thuê, hợp đồng thuê và thanh toán.</p>
                             <div class="application__btn mt-3 text-center"><a href="#">Xem thêm</a></div>
                         </div>
                     </div>
@@ -228,8 +273,7 @@
                                 <img src="./images/app-12.png" alt="app1">
                             </div>
                             <h5 class="mt-3 text-center">QUẢN LÝ DANH MỤC</h5>
-                            <p class="mt-3 text-center">Cho phép thiết lập đầy đủ thông tin liên quan cơ cấu tổ chức,
-                                danh mục chung cho toàn hệ thống.</p>
+                            <p class="mt-3 text-center">Cho phép thiết lập đầy đủ thông tin liên quan cơ cấu tổ chức, danh mục chung cho toàn hệ thống.</p>
                             <div class="application__btn mt-3 text-center"><a href="#">Xem thêm</a></div>
                         </div>
                     </div>
@@ -239,8 +283,7 @@
                                 <img src="./images/app-13.png" alt="app1">
                             </div>
                             <h5 class="mt-3 text-center">QUẢN TRỊ HỆ THỐNG</h5>
-                            <p class="mt-3 text-center">Cho phép quản trị người dùng, phân quyền vai trò, phân quyền
-                                người dùng hệ thống ở các cấp độ quyền chức năng, quyền thao tác và quyền dữ liệu.</p>
+                            <p class="mt-3 text-center">Cho phép quản trị người dùng, phân quyền vai trò, phân quyền người dùng hệ thống ở các cấp độ quyền chức năng, quyền thao tác và quyền dữ liệu.</p>
                             <div class="application__btn mt-3 text-center"><a href="#">Xem thêm</a></div>
                         </div>
                     </div>
@@ -252,8 +295,7 @@
                                 <img src="./images/app-14.png" alt="app1">
                             </div>
                             <h5 class="mt-3 text-center">PHẦN MỀM QUẢN LÝ KHO VẬT TƯ - VẬT LIỆU</h5>
-                            <p class="mt-3 text-center">Quản lý tất cả các quá trình từ yêu cầu mua sắm, nhập kho, điều
-                                chuyển, cấp phát sử dụng vật tư vật liệu, văn phòng phẩm, hàng hóa, tặng phẩm.</p>
+                            <p class="mt-3 text-center">Quản lý tất cả các quá trình từ yêu cầu mua sắm, nhập kho, điều chuyển, cấp phát sử dụng vật tư vật liệu, văn phòng phẩm, hàng hóa, tặng phẩm.</p>
                             <div class="application__btn mt-3 text-center"><a href="#">Xem thêm</a></div>
                         </div>
                     </div>
@@ -263,17 +305,17 @@
                                 <img src="./images/app-15.png" alt="app1">
                             </div>
                             <h5 class="mt-3 text-center">PHẦN MỀM THANH QUYẾT TOÁN TẠM ỨNG</h5>
-                            <p class="mt-3 text-center">Quản lý, theo dõi tất cả các quá trình tạm ứng, thanh quyết toán
-                                trong quá trình thực hiện đầu tư mua sắm để luôn chủ động được dòng tiền thanh toán.</p>
+                            <p class="mt-3 text-center">Quản lý, theo dõi tất cả các quá trình tạm ứng, thanh quyết toán trong quá trình thực hiện đầu tư mua sắm để luôn chủ động được dòng tiền thanh toán.</p>
                             <div class="application__btn mt-3 text-center"><a href="#">Xem thêm</a></div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+        <!-- end list -->
+        <!-- contact -->
         <section class="section-contact">
-            <h3 class="title-section-contact font-bold">Tối ưu hóa quá trình đầu tư mua sắm và quản lý tài sản tập trung
-                với gAMSPRo</h3>
+            <h3 class="title-section-contact font-bold">Tối ưu hóa quá trình đầu tư mua sắm và quản lý tài sản tập trung với gAMSPRo</h3>
             <div class="contact-form">
                 <div class="contact-header">
                     <h3 style="text-align: center;"><span style="font-size: 28px; color: #ffffff;">Nhận tư vấn chi tiết
@@ -302,14 +344,12 @@
                         </div>
                         <div class="row mb-2">
                             <div class="col-lg-12 text-center">
-                                <textarea class="new-contact-field area" rows="3"
-                                    placeholder="Nội dung bạn cần trao đổi với chúng tôi (*)"></textarea>
+                                <textarea class="new-contact-field area" rows="3" placeholder="Nội dung bạn cần trao đổi với chúng tôi (*)"></textarea>
                             </div>
                         </div>
                         <div class="row mb-4">
                             <div class="col-12">
-                                <input type="checkbox" class="d-inline ml-2"> <span
-                                    class="text-white font-weight-bold">Vui lòng check để đảm
+                                <input type="checkbox" class="d-inline ml-2"> <span class="text-white font-weight-bold">Vui lòng check để đảm
                                     bảo thông tin ở trên là chính xác.</span>
                             </div>
                         </div>
@@ -322,12 +362,13 @@
                     </div>
                 </div>
         </section>
+        <!-- contact -->
+        <!-- sell -->
         <section class="sell">
             <div class="container-fluid">
                 <div class="row ">
                     <div class="col-12">
-                        <h3 class="text-center text-white mb-5" style="font-weight: 600;">Chia sẻ tầm quan trọng về việc
-                            ứng dụng công nghệ thông tin trong việc quản trị đầu tư mua sắm và quản lý tài sản tập trung
+                        <h3 class="text-center text-white mb-5" style="font-weight: 600;">Chia sẻ tầm quan trọng về việc ứng dụng công nghệ thông tin trong việc quản trị đầu tư mua sắm và quản lý tài sản tập trung
                         </h3>
                     </div>
                 </div>
@@ -338,11 +379,9 @@
                             <div class="card-body">
                                 <a href="#" class="card-title text-danger">Tài sản doanh nghiệp là gì? Tất tần tật các
                                     loại tài sản bạn cần biết</a>
-                                <p class="card-text">Trong các hoạt động sản xuất kinh doanh, vận hành, quản lý của
-                                    doanh nghiệp, tài sản đóng vai trò vô cùng quan trọng. Việc hiểu biết sâu sắc, chi
-                                    tiết tài...</p>
+                                <p class="card-text">Trong các hoạt động sản xuất kinh doanh, vận hành, quản lý của doanh nghiệp, tài sản đóng vai trò vô cùng quan trọng. Việc hiểu biết sâu sắc, chi tiết tài...</p>
                                 <i> <span><i class='bx bx-calendar text-danger' style="font-size: 1.5rem;"></i></span>
-                                    03-12-2020</i>
+                                03-12-2020</i>
                             </div>
                         </div>
                     </div>
@@ -352,11 +391,9 @@
                             <div class="card-body">
                                 <a href="#" class="card-title text-danger">Tài sản doanh nghiệp là gì? Tất tần tật các
                                     loại tài sản bạn cần biết</a>
-                                <p class="card-text">Trong các hoạt động sản xuất kinh doanh, vận hành, quản lý của
-                                    doanh nghiệp, tài sản đóng vai trò vô cùng quan trọng. Việc hiểu biết sâu sắc, chi
-                                    tiết tài...</p>
+                                <p class="card-text">Trong các hoạt động sản xuất kinh doanh, vận hành, quản lý của doanh nghiệp, tài sản đóng vai trò vô cùng quan trọng. Việc hiểu biết sâu sắc, chi tiết tài...</p>
                                 <i> <span><i class='bx bx-calendar text-danger' style="font-size: 1.5rem;"></i></span>
-                                    03-12-2020</i>
+                                03-12-2020</i>
                             </div>
                         </div>
                     </div>
@@ -366,11 +403,9 @@
                             <div class="card-body">
                                 <a href="#" class="card-title text-danger">Tài sản doanh nghiệp là gì? Tất tần tật các
                                     loại tài sản bạn cần biết</a>
-                                <p class="card-text">Trong các hoạt động sản xuất kinh doanh, vận hành, quản lý của
-                                    doanh nghiệp, tài sản đóng vai trò vô cùng quan trọng. Việc hiểu biết sâu sắc, chi
-                                    tiết tài...</p>
+                                <p class="card-text">Trong các hoạt động sản xuất kinh doanh, vận hành, quản lý của doanh nghiệp, tài sản đóng vai trò vô cùng quan trọng. Việc hiểu biết sâu sắc, chi tiết tài...</p>
                                 <i> <span><i class='bx bx-calendar text-danger' style="font-size: 1.5rem;"></i></span>
-                                    03-12-2020</i>
+                                03-12-2020</i>
                             </div>
                         </div>
                     </div>
@@ -380,11 +415,9 @@
                             <div class="card-body">
                                 <a href="#" class="card-title text-danger">Tài sản doanh nghiệp là gì? Tất tần tật các
                                     loại tài sản bạn cần biết</a>
-                                <p class="card-text">Trong các hoạt động sản xuất kinh doanh, vận hành, quản lý của
-                                    doanh nghiệp, tài sản đóng vai trò vô cùng quan trọng. Việc hiểu biết sâu sắc, chi
-                                    tiết tài...</p>
+                                <p class="card-text">Trong các hoạt động sản xuất kinh doanh, vận hành, quản lý của doanh nghiệp, tài sản đóng vai trò vô cùng quan trọng. Việc hiểu biết sâu sắc, chi tiết tài...</p>
                                 <i> <span><i class='bx bx-calendar text-danger' style="font-size: 1.5rem;"></i></span>
-                                    03-12-2020</i>
+                                03-12-2020</i>
                             </div>
                         </div>
                     </div>
@@ -396,10 +429,10 @@
                 </div>
             </div>
         </section>
-
+        <!-- sell -->
+        <!-- question -->
         <section class="question-section">
-            <h2 class="title-question" style=" color: #dc1137;text-transform: uppercase;font-weight: bold;">Hãy để Gsoft
-                giúp bạn trả lời những câu hỏi trước khi mua phần mềm</h2>
+            <h2 class="title-question" style=" color: #dc1137;text-transform: uppercase;font-weight: bold;">Hãy để Gsoft giúp bạn trả lời những câu hỏi trước khi mua phần mềm</h2>
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-md-7">
@@ -408,81 +441,63 @@
                             </div>
                             <i class='bx bx-plus'></i>
                             <p class="question__answer  px-3">
-                                Phần mềm quản trị đầu tư mua sắm và quản lý tài sản tập trung sẽ rất phù hợp với các
-                                doanh nghiệp có quy mô lớn tài sản cố định, công cụ dụng cụ, trang thiết bị như ngân
-                                hàng, tài chính, y tế, giáo dục, vận tải, khu chế xuất cần một giải pháp tổng thể quản
-                                lý từ khâu lập kế hoạch đầu tư mua sắm, quản lý mua sắm, quản lý cả một vòng đời tài
-                                sản.
+                                Phần mềm quản trị đầu tư mua sắm và quản lý tài sản tập trung sẽ rất phù hợp với các doanh nghiệp có quy mô lớn tài sản cố định, công cụ dụng cụ, trang thiết bị như ngân hàng, tài chính, y tế, giáo dục, vận tải, khu chế xuất cần một giải pháp tổng thể
+                                quản lý từ khâu lập kế hoạch đầu tư mua sắm, quản lý mua sắm, quản lý cả một vòng đời tài sản.
                             </p>
                         </div>
                         <div class="question" onclick="show(1)">
-                            <div class="question__title pb-3 text-primary">2. Những tính năng gì cần thiết cho một phần
-                                mềm quản lý tài sản?</div>
+                            <div class="question__title pb-3 text-primary">2. Những tính năng gì cần thiết cho một phần mềm quản lý tài sản?</div>
                             <i class='bx bx-plus'></i>
                             <p class="question__answer  px-3">
-                                Một phần mềm quản lý tài sản tổng thể tốt nhất hiện nay phải đáp ứng được các tính năng
-                                từ khâu lập kế hoạch mua sắm cho đến việc quản lý tài sản.Quản lý bắt đầu ngay khi có ý
-                                định mua cho đến khi thanh lý tài sản.Quan trọng nhất là phải hoạch toán chính xác, đồng
-                                bộ hóa dữ liệu với bộ phận mua sắm, hành chính, kế toán. Bởi vì nếu chỉ quản lý tài sản
-                                một cách cơ bản thì có thể dùng Excel hay một giải pháp riêng lẻ nào đó.
+                                Một phần mềm quản lý tài sản tổng thể tốt nhất hiện nay phải đáp ứng được các tính năng từ khâu lập kế hoạch mua sắm cho đến việc quản lý tài sản.Quản lý bắt đầu ngay khi có ý định mua cho đến khi thanh lý tài sản.Quan trọng nhất là phải hoạch toán chính
+                                xác, đồng bộ hóa dữ liệu với bộ phận mua sắm, hành chính, kế toán. Bởi vì nếu chỉ quản lý tài sản một cách cơ bản thì có thể dùng Excel hay một giải pháp riêng lẻ nào đó.
                             </p>
                         </div>
                         <div class="question" onclick="show(2)">
-                            <div class="question__title pb-3 text-primary">3. Tôi có được dùng thử trước khi mua phần
-                                mềm không?</div>
+                            <div class="question__title pb-3 text-primary">3. Tôi có được dùng thử trước khi mua phần mềm không?</div>
                             <i class='bx bx-plus'></i>
                             <p class="question__answer  px-3">
                                 Chỉ cần click vào nút đăng ký và điền đầy đủ thông tin hoặc liên hệ ngay số điện thoại
-                                <span style="color: #ff242e">0913 509 979 </span> để dùng thử trong 15 ngày.Chuyên viên
-                                tư vấn của GSOFT sẽ đồng hành cùng các bạn để giải đáp các thắc mắc, yêu cầu trong suốt
-                                quá trình dùng thử và hỗ trợ bạn khi mua phần mềm khi có nhu cầu.
+                                <span style="color: #ff242e">0913 509 979 </span> để dùng thử trong 15 ngày.Chuyên viên tư vấn của GSOFT sẽ đồng hành cùng các bạn để giải đáp các thắc mắc, yêu cầu trong suốt quá trình dùng thử và hỗ trợ bạn khi mua phần
+                                mềm khi có nhu cầu.
                             </p>
                         </div>
                         <div class="question" onclick="show(3)">
                             <div class="question__title pb-3 text-primary">4. Giá phần mềm gAMSPro là bao nhiêu?</div>
                             <i class='bx bx-plus'></i>
                             <p class="question__answer  px-3">
-                                Vì đây là một giải pháp tổng thể nên chi phí sẽ dựa vào quy mô của từng công ty tương
-                                ứng với số lượng tài sản cần quản lý.Ngoài ra, GSOFT cũng sẽ tính phí Customize nếu như
-                                phát sinh những quy trình, nghiệp vụ ngoài các tính năng GSOFT cung cấp
+                                Vì đây là một giải pháp tổng thể nên chi phí sẽ dựa vào quy mô của từng công ty tương ứng với số lượng tài sản cần quản lý.Ngoài ra, GSOFT cũng sẽ tính phí Customize nếu như phát sinh những quy trình, nghiệp vụ ngoài các tính năng GSOFT cung cấp
                             </p>
                         </div>
                         <div class="question" onclick="show(4)">
-                            <div class="question__title pb-3 text-primary">5. Nếu muốn mua một vài chức năng riêng lẻ để
-                                sử dụng trước thì GSOFT tính phí thế nào?</div>
+                            <div class="question__title pb-3 text-primary">5. Nếu muốn mua một vài chức năng riêng lẻ để sử dụng trước thì GSOFT tính phí thế nào?</div>
                             <i class='bx bx-plus'></i>
                             <p class="question__answer  px-3">
-                                GSOFT cung cấp một giải pháp tổng thể để phục vụ tối đa hiệu năng sử dụng phần mềm.Tuy
-                                nhiên, GSOFT vẫn đảm bảo cung cấp những phân hệ riêng lẻ mà đã nghiên cứu trước đó để
-                                phụ vụ doanh nghiệp khi chưa cần một giải pháp tổng thể.Vì thế, bạn yên tâm nhé! </p>
+                                GSOFT cung cấp một giải pháp tổng thể để phục vụ tối đa hiệu năng sử dụng phần mềm.Tuy nhiên, GSOFT vẫn đảm bảo cung cấp những phân hệ riêng lẻ mà đã nghiên cứu trước đó để phụ vụ doanh nghiệp khi chưa cần một giải pháp tổng thể.Vì thế, bạn yên tâm nhé!
+                            </p>
                         </div>
                         <div class="question" onclick="show(5)">
-                            <div class="question__title pb-3 text-primary">6. GSOFT có hỗ trợ tôi trong quá trình sử
-                                dụng không?</div>
+                            <div class="question__title pb-3 text-primary">6. GSOFT có hỗ trợ tôi trong quá trình sử dụng không?</div>
                             <i class='bx bx-plus'></i>
                             <p class="question__answer  px-3">
-                                Đội ngũ triển khai của GSOFT sẽ luôn tận tình trong suốt quá trình sử dụng phần mềm
-                                gAMSPro.Tổng đài hotline, hệ thống live chat, mail liên hệ sẵn sàng giải đáp thắc mắc và
-                                yêu cầu của bạn tất cả trong tuần.Bạn sẽ được cung cấp tài liệu hướng dẫn, những buổi
-                                đạo trực tuyến hay trực tiếp trong suốt quá trình sử dụng. </p>
+                                Đội ngũ triển khai của GSOFT sẽ luôn tận tình trong suốt quá trình sử dụng phần mềm gAMSPro.Tổng đài hotline, hệ thống live chat, mail liên hệ sẵn sàng giải đáp thắc mắc và yêu cầu của bạn tất cả trong tuần.Bạn sẽ được cung cấp tài liệu hướng dẫn, những
+                                buổi đạo trực tuyến hay trực tiếp trong suốt quá trình sử dụng. </p>
                         </div>
                     </div>
                     <div class="col-md-5 text-center">
-                        <img style="max-width: 320px; width: 100%; margin-top: 10px;"
-                            data-src="https://gsoft.com.vn/wp-content/uploads/2020/10/gcn.png" class=" lazyloaded"
-                            src="https://gsoft.com.vn/wp-content/uploads/2020/10/gcn.png">
+                        <img style="max-width: 320px; width: 100%; margin-top: 10px;" data-src="https://gsoft.com.vn/wp-content/uploads/2020/10/gcn.png" class=" lazyloaded" src="https://gsoft.com.vn/wp-content/uploads/2020/10/gcn.png">
                     </div>
                 </div>
             </div>
         </section>
+        <!-- question -->
 
-
+        <!-- sell -->
         <section class="sell">
             <div class="container-fluid">
                 <div class="row ">
                     <div class="col-12">
-                        <h3 class="text-center text-white mb-5" style="font-weight: 600;">Giải quyết bài toán nguồn nhân
-                            lực phát triển phần mềm cho doanh nghiệp trong thời đại chuyển đổi số
+                        <h3 class="text-center text-white mb-5" style="font-weight: 600;">Giải quyết bài toán nguồn nhân lực phát triển phần mềm cho doanh nghiệp trong thời đại chuyển đổi số
                         </h3>
                     </div>
                 </div>
@@ -493,10 +508,9 @@
                             <div class="card-body">
                                 <a href="#" class="card-title text-danger">PHP là gì? Top những điều cần biết về PHP cho
                                     doanh nghiệp phát triển phần mềm</a>
-                                <p class="card-text">PHP là gì? PHP được sử dụng để làm gì và ứng dụng đối với doanh
-                                    nghiệp như thế nào? Đó ắt hẳn là những điều mà doanh nghiệp phát triển phần...</p>
+                                <p class="card-text">PHP là gì? PHP được sử dụng để làm gì và ứng dụng đối với doanh nghiệp như thế nào? Đó ắt hẳn là những điều mà doanh nghiệp phát triển phần...</p>
                                 <i> <span><i class='bx bx-calendar text-danger' style="font-size: 1.5rem;"></i></span>
-                                    29-11-2020</i>
+                                29-11-2020</i>
                             </div>
                         </div>
                     </div>
@@ -506,11 +520,10 @@
                             <div class="card-body">
                                 <a href="#" class="card-title text-danger">6 lợi ích IT Onsite mang đến cho doanh nghiệp
                                     phát triển phần mềm</a>
-                                <p class="card-text">Ngày nay việc sử dụng phần mềm để kinh doanh, phục vụ cho các công
-                                    tác quản lý không còn gì lạ đối với các doanh nghiệp. Từ những chiếc smartphone
-                                    đến...</p>
+                                <p class="card-text">Ngày nay việc sử dụng phần mềm để kinh doanh, phục vụ cho các công tác quản lý không còn gì lạ đối với các doanh nghiệp. Từ những chiếc smartphone đến...
+                                </p>
                                 <i> <span><i class='bx bx-calendar text-danger' style="font-size: 1.5rem;"></i></span>
-                                    13-10-2020</i>
+                                13-10-2020</i>
                             </div>
                         </div>
                     </div>
@@ -520,10 +533,9 @@
                             <div class="card-body">
                                 <a href="#" class="card-title text-danger">IT Onsite - Giải pháp tiết kiệm chi phí cho
                                     doanh nghiệp phát triển phần mềm</a>
-                                <p class="card-text">Làm cách nào để tiết kiệm chi phí cho việc phát triển phần mềm? Đó
-                                    là điều mà các doanh nghiệp nghĩ đến khi mà bước sang kỷ nguyên 4.0, thời đại...</p>
+                                <p class="card-text">Làm cách nào để tiết kiệm chi phí cho việc phát triển phần mềm? Đó là điều mà các doanh nghiệp nghĩ đến khi mà bước sang kỷ nguyên 4.0, thời đại...</p>
                                 <i> <span><i class='bx bx-calendar text-danger' style="font-size: 1.5rem;"></i></span>
-                                    03-12-2020</i>
+                                03-12-2020</i>
                             </div>
                         </div>
                     </div>
@@ -533,11 +545,10 @@
                             <div class="card-body">
                                 <a href="#" class="card-title text-danger">5 lợi ích khi lập trình viên phát triển phần
                                     mềm làm việc Onsite</a>
-                                <p class="card-text">Làm việc Onsite đã ra đời từ lâu đã là trào lưu và là một phần
-                                    trong thế giới ngày nay. Trong thời đại công nghệ thông tin 4.0 hiện nay, Việt...
+                                <p class="card-text">Làm việc Onsite đã ra đời từ lâu đã là trào lưu và là một phần trong thế giới ngày nay. Trong thời đại công nghệ thông tin 4.0 hiện nay, Việt...
                                 </p>
                                 <i> <span><i class='bx bx-calendar text-danger' style="font-size: 1.5rem;"></i></span>
-                                    03-12-2020</i>
+                                03-12-2020</i>
                             </div>
                         </div>
                     </div>
@@ -549,11 +560,10 @@
                 </div>
             </div>
         </section>
-
+        <!-- sell -->
+        <!--customer  -->
         <section class="customer-section" style="color:#1f1a4b">
-            <h2 class="text-center mb-5" style="font-weight: bold;">Sự hài lòng của khách hàng chính là thành công lớn
-                nhất
-                của chúng tôi</h2>
+            <h2 class="text-center mb-5" style="font-weight: bold;">Sự hài lòng của khách hàng chính là thành công lớn nhất của chúng tôi</h2>
             <div class="mt-3 list-customer">
                 <div class="customer"><img src="./images/customer/c1.png" alt="c1"></div>
                 <div class="customer"><img src="./images/customer/c2.png" alt="c1"></div>
@@ -573,67 +583,75 @@
             </div>
         </section>
         <section style="color:#1f1a4b; padding-bottom: 3rem;">
-            <h5 class="text-center my-4" style="font-weight: bold;">Với các doanh nghiệp nhiều tài sản, trang thiết bị,
-                công cụ dụng cụ cần quản lý thì còn chần chờ gì nữa !</h5>
+            <h5 class="text-center my-4" style="font-weight: bold;">Với các doanh nghiệp nhiều tài sản, trang thiết bị, công cụ dụng cụ cần quản lý thì còn chần chờ gì nữa !</h5>
             <div class="text-center">
                 <button class="btn btn-danger contact-btn">LIÊN HỆ NGAY <i class='bx bx-chevron-right'></i></button>
             </div>
         </section>
-    </div>
+        </div>
 
+        <!--customer  -->
+        <!-- end main -->
+        <!-- footer -->
 
-    <div class="footer">
+        <div class="footer">
 
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-3 col-md-6">
-                  <h6 class="mb-4" style="font-weight: bold;">SỨ MỆNH GSOFT ĐỐI VỚI KHÁCH HÀNG</h6>
-                  <p>Bằng cách khai thác, ứng dụng những thành tựu khoa học công nghệ mới nhất, GSOFT mang lại những giải pháp, sản phẩm dịch vụ giúp khách hàng gia tăng hiệu quả công việc, tăng doanh thu và giá trị thương hiệu của khách hàng, đồng thời giúp khách hàng giảm thiểu chi phí quản lý, chi phí quảng bá, truyền thông, tiếp thị, bán hàng.</p>
-                </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6">
+                        <h6 class="mb-4" style="font-weight: bold;">SỨ MỆNH GSOFT ĐỐI VỚI KHÁCH HÀNG</h6>
+                        <p>Bằng cách khai thác, ứng dụng những thành tựu khoa học công nghệ mới nhất, GSOFT mang lại những giải pháp, sản phẩm dịch vụ giúp khách hàng gia tăng hiệu quả công việc, tăng doanh thu và giá trị thương hiệu của khách hàng, đồng
+                            thời giúp khách hàng giảm thiểu chi phí quản lý, chi phí quảng bá, truyền thông, tiếp thị, bán hàng.</p>
+                    </div>
 
-                <div class="col-lg-3 col-md-6">
-                    <img src="./images/vietnam-map.png" alt="a" style="width: 100%;">
-                </div>
+                    <div class="col-lg-3 col-md-6">
+                        <img src="./images/vietnam-map.png" alt="a" style="width: 100%;">
+                    </div>
 
-                <div class="col-lg-3 col-md-6">
-                    <h6 class="mb-4" style="font-weight: bold;">LIÊN HỆ VỚI CHÚNG TÔI</h6>
-                 <ul class="adrs">
-                     <li>
-                        <i class='bx bxs-map' style="color: #F66E1E;"></i>
-                        <a href="#">Tầng 6 - 7 - 8, 235 Lý Thường Kiệt, Phường 6, Quận Tân Bình, Tp. HCM.</a>
-                     </li>
-                     <li>
-                        <i class='bx bxs-map' style="color: #F66E1E;"></i>
-                        <a href="#">Tầng 6 - 7 - 8, 235 Lý Thường Kiệt, Phường 6, Quận Tân Bình, Tp. HCM.</a>
-                     </li>
-                     <li>
-                          <i class='bx bxs-map' style="color: #F66E1E;"></i>
-                        <a href="#">Tầng 6 - 7 - 8, 235 Lý Thường Kiệt, Phường 6, Quận Tân Bình, Tp. HCM.</a>
-                     </li>
-                     <li>
-                          <i class='bx bxs-map' style="color: #F66E1E;"></i>
-                        <a href="#">Tầng 6 - 7 - 8, 235 Lý Thường Kiệt, Phường 6, Quận Tân Bình, Tp. HCM.</a>
-                     </li>
-                 </ul>
-                </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h6 class="mb-4" style="font-weight: bold;">LIÊN HỆ VỚI CHÚNG TÔI</h6>
+                        <ul class="adrs">
+                            <li>
+                                <i class='bx bxs-map' style="color: #F66E1E;"></i>
+                                <a href="#">Tầng 6 - 7 - 8, 235 Lý Thường Kiệt, Phường 6, Quận Tân Bình, Tp. HCM.</a>
+                            </li>
+                            <li>
+                                <i class='bx bxs-map' style="color: #F66E1E;"></i>
+                                <a href="#">Tầng 6 - 7 - 8, 235 Lý Thường Kiệt, Phường 6, Quận Tân Bình, Tp. HCM.</a>
+                            </li>
+                            <li>
+                                <i class='bx bxs-map' style="color: #F66E1E;"></i>
+                                <a href="#">Tầng 6 - 7 - 8, 235 Lý Thường Kiệt, Phường 6, Quận Tân Bình, Tp. HCM.</a>
+                            </li>
+                            <li>
+                                <i class='bx bxs-map' style="color: #F66E1E;"></i>
+                                <a href="#">Tầng 6 - 7 - 8, 235 Lý Thường Kiệt, Phường 6, Quận Tân Bình, Tp. HCM.</a>
+                            </li>
+                        </ul>
+                    </div>
 
-                <div class="col-lg-3 col-md-6">
-                    <h6 class="mb-4" style="font-weight: bold;">FACEBOOK</h6>
-                    <div class="fb-page fb_iframe_widget" data-href="https://www.facebook.com/gsoft.com.vn" data-width="370" data-height="70" data-tabs="timeline" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true" fb-xfbml-state="rendered" fb-iframe-plugin-query="adapt_container_width=true&amp;app_id=&amp;container_width=270&amp;height=70&amp;hide_cover=false&amp;href=https%3A%2F%2Fwww.facebook.com%2Fgsoft.com.vn&amp;locale=vi_VN&amp;sdk=joey&amp;show_facepile=true&amp;small_header=false&amp;tabs=timeline&amp;width=370"><span style="vertical-align: bottom; width: 270px; height: 130px;"><iframe name="f3d8ea3babbe098" width="370px" height="70px" data-testid="fb:page Facebook Social Plugin" title="fb:page Facebook Social Plugin" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" allow="encrypted-media" src="https://www.facebook.com/v7.0/plugins/page.php?adapt_container_width=true&amp;app_id=&amp;channel=https%3A%2F%2Fstaticxx.facebook.com%2Fx%2Fconnect%2Fxd_arbiter%2F%3Fversion%3D46%23cb%3Df1a54cadf49482%26domain%3Dgsoft.com.vn%26origin%3Dhttps%253A%252F%252Fgsoft.com.vn%252Ff3a87894683c174%26relation%3Dparent.parent&amp;container_width=270&amp;height=70&amp;hide_cover=false&amp;href=https%3A%2F%2Fwww.facebook.com%2Fgsoft.com.vn&amp;locale=vi_VN&amp;sdk=joey&amp;show_facepile=true&amp;small_header=false&amp;tabs=timeline&amp;width=370" style="border: none; visibility: visible; width: 270px; height: 130px;" class=""></iframe></span></div>
-                    <div class="mt-3">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.3852908668496!2d106.65312341533416!3d10.78177396204187!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752ec86410f15d%3A0xbc30e3e0d55cb48f!2zMjM1IEzDvSBUaMaw4budbmcgS2nhu4d0LCBQaMaw4budbmcgNiwgVMOibiBCw6xuaCwgVGjDoG5oIHBo4buRIEjhu5MgQ2jDrSBNaW5oLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1608125980300!5m2!1svi!2s" width="100%" height="170" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                    <div class="col-lg-3 col-md-6">
+                        <h6 class="mb-4" style="font-weight: bold;">FACEBOOK</h6>
+                        <div class="fb-page fb_iframe_widget" data-href="https://www.facebook.com/gsoft.com.vn" data-width="370" data-height="70" data-tabs="timeline" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"
+                            fb-xfbml-state="rendered" fb-iframe-plugin-query="adapt_container_width=true&amp;app_id=&amp;container_width=270&amp;height=70&amp;hide_cover=false&amp;href=https%3A%2F%2Fwww.facebook.com%2Fgsoft.com.vn&amp;locale=vi_VN&amp;sdk=joey&amp;show_facepile=true&amp;small_header=false&amp;tabs=timeline&amp;width=370"><span style="vertical-align: bottom; width: 270px; height: 130px;"><iframe name="f3d8ea3babbe098" width="370px" height="70px" data-testid="fb:page Facebook Social Plugin" title="fb:page Facebook Social Plugin" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" allow="encrypted-media" src="https://www.facebook.com/v7.0/plugins/page.php?adapt_container_width=true&amp;app_id=&amp;channel=https%3A%2F%2Fstaticxx.facebook.com%2Fx%2Fconnect%2Fxd_arbiter%2F%3Fversion%3D46%23cb%3Df1a54cadf49482%26domain%3Dgsoft.com.vn%26origin%3Dhttps%253A%252F%252Fgsoft.com.vn%252Ff3a87894683c174%26relation%3Dparent.parent&amp;container_width=270&amp;height=70&amp;hide_cover=false&amp;href=https%3A%2F%2Fwww.facebook.com%2Fgsoft.com.vn&amp;locale=vi_VN&amp;sdk=joey&amp;show_facepile=true&amp;small_header=false&amp;tabs=timeline&amp;width=370" style="border: none; visibility: visible; width: 270px; height: 130px;" class=""></iframe></span></div>
+                        <div class="mt-3">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.3852908668496!2d106.65312341533416!3d10.78177396204187!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752ec86410f15d%3A0xbc30e3e0d55cb48f!2zMjM1IEzDvSBUaMaw4budbmcgS2nhu4d0LCBQaMaw4budbmcgNiwgVMOibiBCw6xuaCwgVGjDoG5oIHBo4buRIEjhu5MgQ2jDrSBNaW5oLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1608125980300!5m2!1svi!2s"
+                                width="100%" height="170" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+        <div class="footer__bottom text-center py-2">
+            <p>Copyright © 2020 GSOFT
+                <br> Thiết kế website bởi GSOFT
+            </p>
+        </div>
+        <!-- end footer -->
+        <!-- js -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+        <script src="./js/home.js"></script>
 
-    <!-- js -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
-        crossorigin="anonymous"></script>
-    <script src="./js/home.js"></script>
-   
 </body>
 
 </html>

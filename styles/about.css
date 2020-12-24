@@ -1,0 +1,78 @@
+.section-contact {
+    padding: 1rem;
+}
+
+.title {
+    font-size: 40px;
+    border: 3px white solid;
+    height: 500px;
+    border: 3px solid white;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.about__content {
+    padding: 8rem 8rem
+}
+
+.entry-item {
+    padding-top: 50px !important;
+    padding-bottom: 50px !important;
+    background-image: url(https://gsoft.com.vn/wp-content/uploads/2018/10/gioi-thieu-gsoft-7.jpg?id=8608) !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: -0.8rem;
+}
+
+.vision-title {
+    text-align: end;
+}
+
+.vision-title>span {
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-bottom: 3px solid #3a5c8c;
+}
+
+.card-vision {
+    background-color: white
+}
+
+.sumenh {
+    padding: 20px 40px !important;
+    background-image: url(https://gsoft.com.vn/wp-content/uploads/2018/10/gioi-thieu-gsoft-10.jpg?id=8619) !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    align-items: center;
+    display: flex;
+}
+
+.card-action {
+    padding: 8rem !important;
+    background-color: #fafafa
+}
+
+@media only screen and (min-width: 990px) {
+    .about__content {
+        padding: 8rem 8rem
+    }
+}
+
+@media only screen and (max-width: 889px) {
+    .about__content {
+        padding: 8rem 1rem
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .card-action {
+        padding: 8rem 1rem !important;
+        background-color: #fafafa
+    }
+}

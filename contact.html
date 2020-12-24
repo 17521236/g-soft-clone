@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Công ty TNHH Phần Mềm Toàn Cầu</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles/home.css">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./styles/contact.css">
+</head>
+
+<body>
+    <!-- header -->
+    <div class="header sticky-top bg-white" style="box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.2);">
+        <nav>
+            <a class="logo" href="./index.html"></a>
+            <div class="navbar">
+                <ul class="navbar-items d-flex p-0">
+                    <li class="navbar-item navbar-item--has-dropdown"><a href="#">Giới thiệu</a>
+                        <ul class="submenu">
+                            <li class="submenu-item"><a href="./about.html">Về GSOFT</a></li>
+                            <li class="submenu-item"><a href="#">Đối tác chiến lược</a></li>
+                        </ul>
+                    </li>
+                    <li class="navbar-item"><a href="#">Phần mềm</a></li>
+                    <li class="navbar-item"><a href="#">Bảng giá</a></li>
+                    <li class="navbar-item"><a href="#">Hướng dẫn</a></li>
+                    <li class="navbar-item"><a href="#">IT onsite </a></li>
+                    <li class="navbar-item"><a href="#">blog</a></li>
+                    <li class="navbar-item"><a href="#">Tuyển dụng</a></li>
+                    <li class="navbar-item"><a href="./contact.html">liên hệ</a></li>
+                    <li class="navbar-item item--register "><a href="#">Đăng ký <i class='bx bx-chevron-right i'></i></a></li>
+                </ul>
+            </div>
+            <div class="btn-menu-mobile" onclick="showNav()">
+                <button id="btn-show" class="btn"> <i class="bx bx-menu" style="font-size: 2rem;"></i></button>
+                <button id="btn-hide" class="btn btn-hide"><i class='bx bx-left-arrow-alt' style="font-size: 2rem;"></i></button>
+            </div>
+
+            <div id="navbar-mobile" class="navbar-mobile">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="nav-mobile-item">
+                                <a href="#">Trang chủ</a>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="nav-mobile-item">
+                                <a href="#">Giới thiệu</a>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="nav-mobile-item">
+                                <a href="#">Phần mềm</a>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="nav-mobile-item">
+                                <a href="#">Bảng giá</a>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="nav-mobile-item">
+                                <a href="#">Hướng dẫn</a>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="nav-mobile-item">
+                                <a href="#">IT onsite </a>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="nav-mobile-item">
+                                <a href="#">Blog </a>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="nav-mobile-item">
+                                <a href="#">Tuyển dụng </a>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="nav-mobile-item">
+                                <a href="#">Liên hệ </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- end header -->
+
+    <!-- main -->
+    <div class="body">
+
+
+        <!-- banner -->
+        <div class="banner-contact text-center mb-4">
+            <span class="text-danger">"</span>All for better life<span class="text-danger">"</span>
+        </div>
+        <!-- end banner -->
+
+        <!--form contact -->
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-6">
+                    <h1 class="fw-bolder text-center mb-5">LIÊN HỆ VỚI CHÚNG TÔI
+                        <div class="m-auto mt-3" style="border-bottom: 4px red solid; width: 200px;"></div>
+                    </h1>
+                    <form action="">
+                        <div class="container">
+                            <div class="row mb-3">
+                                <div class="col-lg-6">
+                                    <div class="fw-bolder mb-2">Tên của bạn (*)</div>
+                                    <div>
+                                        <input class="contact__input">
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="fw-bolder mb-2">Email của bạn (*)</div>
+                                    <div>
+                                        <input class="contact__input">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <div class="col-lg-6">
+                                    <div class="fw-bolder mb-2">Số điện thoại của bạn (*)</div>
+                                    <div>
+                                        <input class="contact__input">
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="fw-bolder mb-2">Website của bạn (*)</div>
+                                    <div>
+                                        <input class="contact__input">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <div class="col-12">
+                                    <div class="fw-bolder mb-2">Nội dung bạn cần trao đổi với chúng tôi (*)</div>
+                                    <div>
+                                        <textarea class="contact__input" rows="7" cols="3">
+                                        </textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <div class="col-12">
+                                    <div>
+                                        <input type="checkbox"> <span class="fw-bolder">Vui lòng check để đảm bảo thông tin ở trên là chính xác.</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row mb-3">
+                                <div class="col-12">
+                                    <button class="btn btn-danger px-4 py-3" style="background-color: #ff2e24"><span class="text-white">Gửi thông tin</span></button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-md-6">
+                    <div class="info">
+                        <p><img style="width: 150px;" src="https://gsoft.com.vn/wp-content/uploads/2020/10/logo_new_1_while.png"></p>
+                        <h1>
+                            Liên hệ với GSOFT
+                        </h1>
+                        <ul>
+                            <li> 235 Lý Thường Kiệt, Phường 6, Quận Tân Bình, Tp.HCM</li>
+                            <li> 177B Trần Văn Đang, Phường 11, Quận 3, Tp.HCM</li>
+                            <li> Tầng 7 tòa nhà Việt Á, Số 9 phố Duy Tân, P. Dịch Vọng Hậu, Q. Cầu Giấy, Hà Nội.</li>
+                            <li> 235 Lý Thường Kiệt, Phường 6, Quận Tân Bình, Tp.HCM</li>
+                        </ul>
+                        <u>Thời gian làm việc:</u>
+                        <ul>
+                            <li>» Thứ 2 đến thứ 6</li>
+                            <li>» Sáng: 7h45 - 12h</li>
+                            <li>» Trưa: 13h - 17h30</li>
+                            <li>» Thứ 2 đến thứ 6</li>
+                        </ul>
+                        <p style="color: #fff; font-size: 19px;">Ngoài giờ làm việc, Quý khách có thể gửi email đến địa chỉ <a style="color: #fff; font-size: 19px;">0913 509 979</a> (trong trường hợp cần hỗ trợ gấp).</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end form contact -->
+
+        <!-- map -->
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.3852908668496!2d106.65312341533416!3d10.78177396204187!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752ec86410f15d%3A0xbc30e3e0d55cb48f!2zMjM1IEzDvSBUaMaw4budbmcgS2nhu4d0LCBQaMaw4budbmcgNiwgVMOibiBCw6xuaCwgVGjDoG5oIHBo4buRIEjhu5MgQ2jDrSBNaW5oLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1608125980300!5m2!1svi!2s"
+                width="100%" height="500" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </div>
+        <!-- end map -->
+
+        <!--customer  -->
+        <section class="customer-section" style="color:#1f1a4b">
+            <h2 class="text-center mb-5" style="font-weight: bold;">Sự hài lòng của khách hàng chính là thành công lớn nhất của chúng tôi</h2>
+            <div class="mt-3 list-customer">
+                <div class="customer"><img src="./images/customer/c1.png" alt="c1"></div>
+                <div class="customer"><img src="./images/customer/c2.png" alt="c1"></div>
+                <div class="customer"><img src="./images/customer/c3.png" alt="c1"></div>
+                <div class="customer"><img src="./images/customer/c4.png" alt="c1"></div>
+                <div class="customer"><img src="./images/customer/c5.png" alt="c1"></div>
+                <div class="customer"><img src="./images/customer/c6.png" alt="c1"></div>
+                <div class="customer"><img src="./images/customer/c7.png" alt="c1"></div>
+                <div class="customer"><img src="./images/customer/c8.png" alt="c1"></div>
+                <div class="customer"><img src="./images/customer/c9.png" alt="c1"></div>
+                <div class="customer"><img src="./images/customer/c10.png" alt="c1"></div>
+                <div class="customer"><img src="./images/customer/c11.png" alt="c1"></div>
+                <div class="customer"><img src="./images/customer/c12.png" alt="c1"></div>
+                <div class="customer"><img src="./images/customer/c13.png" alt="c1"></div>
+                <div class="customer"><img src="./images/customer/c14.png" alt="c1"></div>
+                <div class="customer"><img src="./images/customer/c15.png" alt="c1"></div>
+            </div>
+        </section>
+        <section style="color:#1f1a4b; padding-bottom: 3rem;">
+            <h5 class="text-center my-4" style="font-weight: bold;">Với các doanh nghiệp nhiều tài sản, trang thiết bị, công cụ dụng cụ cần quản lý thì còn chần chờ gì nữa !</h5>
+            <div class="text-center">
+                <button class="btn btn-danger contact-btn">LIÊN HỆ NGAY <i class='bx bx-chevron-right'></i></button>
+            </div>
+        </section>
+    </div>
+
+    <!--customer  -->
+    <!-- end main -->
+    <!-- footer -->
+
+    <div class="footer">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6">
+                    <h6 class="mb-4" style="font-weight: bold;">SỨ MỆNH GSOFT ĐỐI VỚI KHÁCH HÀNG</h6>
+                    <p>Bằng cách khai thác, ứng dụng những thành tựu khoa học công nghệ mới nhất, GSOFT mang lại những giải pháp, sản phẩm dịch vụ giúp khách hàng gia tăng hiệu quả công việc, tăng doanh thu và giá trị thương hiệu của khách hàng, đồng thời
+                        giúp khách hàng giảm thiểu chi phí quản lý, chi phí quảng bá, truyền thông, tiếp thị, bán hàng.</p>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <img src="./images/vietnam-map.png" alt="a" style="width: 100%;">
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <h6 class="mb-4" style="font-weight: bold;">LIÊN HỆ VỚI CHÚNG TÔI</h6>
+                    <ul class="adrs">
+                        <li>
+                            <i class='bx bxs-map' style="color: #F66E1E;"></i>
+                            <a href="#">Tầng 6 - 7 - 8, 235 Lý Thường Kiệt, Phường 6, Quận Tân Bình, Tp. HCM.</a>
+                        </li>
+                        <li>
+                            <i class='bx bxs-map' style="color: #F66E1E;"></i>
+                            <a href="#">Tầng 6 - 7 - 8, 235 Lý Thường Kiệt, Phường 6, Quận Tân Bình, Tp. HCM.</a>
+                        </li>
+                        <li>
+                            <i class='bx bxs-map' style="color: #F66E1E;"></i>
+                            <a href="#">Tầng 6 - 7 - 8, 235 Lý Thường Kiệt, Phường 6, Quận Tân Bình, Tp. HCM.</a>
+                        </li>
+                        <li>
+                            <i class='bx bxs-map' style="color: #F66E1E;"></i>
+                            <a href="#">Tầng 6 - 7 - 8, 235 Lý Thường Kiệt, Phường 6, Quận Tân Bình, Tp. HCM.</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <h6 class="mb-4" style="font-weight: bold;">FACEBOOK</h6>
+                    <div class="fb-page fb_iframe_widget" data-href="https://www.facebook.com/gsoft.com.vn" data-width="370" data-height="70" data-tabs="timeline" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"
+                        fb-xfbml-state="rendered" fb-iframe-plugin-query="adapt_container_width=true&amp;app_id=&amp;container_width=270&amp;height=70&amp;hide_cover=false&amp;href=https%3A%2F%2Fwww.facebook.com%2Fgsoft.com.vn&amp;locale=vi_VN&amp;sdk=joey&amp;show_facepile=true&amp;small_header=false&amp;tabs=timeline&amp;width=370"><span style="vertical-align: bottom; width: 270px; height: 130px;"><iframe name="f3d8ea3babbe098" width="370px" height="70px" data-testid="fb:page Facebook Social Plugin" title="fb:page Facebook Social Plugin" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" allow="encrypted-media" src="https://www.facebook.com/v7.0/plugins/page.php?adapt_container_width=true&amp;app_id=&amp;channel=https%3A%2F%2Fstaticxx.facebook.com%2Fx%2Fconnect%2Fxd_arbiter%2F%3Fversion%3D46%23cb%3Df1a54cadf49482%26domain%3Dgsoft.com.vn%26origin%3Dhttps%253A%252F%252Fgsoft.com.vn%252Ff3a87894683c174%26relation%3Dparent.parent&amp;container_width=270&amp;height=70&amp;hide_cover=false&amp;href=https%3A%2F%2Fwww.facebook.com%2Fgsoft.com.vn&amp;locale=vi_VN&amp;sdk=joey&amp;show_facepile=true&amp;small_header=false&amp;tabs=timeline&amp;width=370" style="border: none; visibility: visible; width: 270px; height: 130px;" class=""></iframe></span></div>
+                    <div class="mt-3">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.3852908668496!2d106.65312341533416!3d10.78177396204187!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752ec86410f15d%3A0xbc30e3e0d55cb48f!2zMjM1IEzDvSBUaMaw4budbmcgS2nhu4d0LCBQaMaw4budbmcgNiwgVMOibiBCw6xuaCwgVGjDoG5oIHBo4buRIEjhu5MgQ2jDrSBNaW5oLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1608125980300!5m2!1svi!2s"
+                            width="100%" height="170" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer__bottom text-center py-2">
+        <p>Copyright © 2020 GSOFT
+            <br> Thiết kế website bởi GSOFT
+        </p>
+    </div>
+    <!-- end footer -->
+    <!-- js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <script src="./js/home.js"></script>
+
+</body>
+
+</html>

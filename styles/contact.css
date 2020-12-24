@@ -1,0 +1,52 @@
+.banner-contact {
+    padding-top: 150px !important;
+    padding-right: 15px !important;
+    padding-bottom: 150px !important;
+    padding-left: 15px !important;
+    background-image: url(https://gsoft.com.vn/wp-content/uploads/2020/10/bg-cty.jpg?id=13489) !important;
+}
+
+.banner-contact {
+    font-size: 60px;
+    color: white;
+    font-weight: bold;
+    font-style: italic;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.banner-contact>span {
+    font-size: 60px;
+}
+
+.info {
+    padding: 20px 30px !important;
+    background-image: url(https://gsoft.com.vn/wp-content/uploads/2020/10/slide-g.jpg?id=13435) !important;
+    color: white;
+    font-size: 19px;
+}
+
+.info>h1 {
+    text-align: center;
+    font-weight: 600;
+    padding: 20px 15px;
+    margin: 10px 0 50px
+}
+
+.info ul {
+    list-style: none;
+    padding: 0;
+}
+
+.info li {
+    margin-bottom: 5px;
+}
+
+.contact__lable {
+    font-weight: 500;
+}
+
+.contact__input {
+    border: 1px solid #1677ff91!important;
+    padding: 5px;
+    width: 100%;
+}
